@@ -54,6 +54,15 @@ header{
     color: rgb(0, 0, 0);
 }
 
+#blur{
+    height: 100vh;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    position: fixed;
+    z-index: 2;
+    display: none;
+}
+
 .content h1{
     font-size: 2.5rem;
 }
