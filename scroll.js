@@ -1,31 +1,17 @@
-document.lastScrollPosition = 0;
-document.lastCcenterd = 0;
-document.onWayTo = null;
+window.addEventListener('scroll', () => {
+    const reveals = document.querySelectorAll('.content');
 
-document.addEventListener('scroll', () => {  
-    const direction = window.pageYOffset - document.lastScrollPosition > 0 ? 'down' : 'up';
-    const sections = [...document.querySelectorAll('section')];
+    for (let i = 0; i < reveals.length; i++) {
+        
+        const windowHeight = window.innerHeight;
+        const revealTop = reveals[i].getBoundingClientRect().top;
+        const revealpoint = 350;
 
-    if(document.onWayTo === null){
-        const destIndex = direction === 'up' ? document.lastCcenterd -1 : document.lastCcenterd +1;
-        if(destIndex >=0 && destIndex < sections.length){
-            document.onWayTo = destIndex;
-            window.scroll(0,sections[destIndex].offsetTop);
-        }
+            if(revealTop < windowHeight - revealpoint){
+                reveals[i].classList.add('active');
+            }else{
+                reveals[i].classList.remove('active');
+            }
+        
     }
-    
-
-    sections.forEach((section, index) =>{
-        if(window.pageYOffset === section.offsetTop){
-            document.lastCcenterd = index;
-            section.className = 'activeSec';
-                if(document.onWayTo ===index){
-                    document.onWayTo = null;
-                }
-        }else{
-            section.className = '';
-        }
-    })
-
-    document.lastScrollPosition = window.pageYOffset;
-})
+});
