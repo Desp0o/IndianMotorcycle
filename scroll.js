@@ -1,6 +1,16 @@
-window.addEventListener('scroll', () => {
-    const reveals = document.querySelectorAll('.content');
+const reveals = document.querySelectorAll('.content');
 
+    window.addEventListener('load', () => {
+        
+        for (let i = 0; i < reveals.length; i++) {
+            reveals[i].classList.add('active');
+            
+                    
+        }
+    })
+
+window.addEventListener('scroll', () => {
+    
     for (let i = 0; i < reveals.length; i++) {
         
         const windowHeight = window.innerHeight;
@@ -11,7 +21,8 @@ window.addEventListener('scroll', () => {
                 reveals[i].classList.add('active');
             }else{
                 reveals[i].classList.remove('active');
-            }
-        
+            }  
     }
-});
+}
+);
+

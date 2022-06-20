@@ -151,7 +151,7 @@ section .content{
     transform: translateY(150px);
     transition: all 0.6s ease ;
     position: relative;
-    padding: 10vh 0;
+    padding: 10vh 0 20vh 0;
 
     text-align: center;
     text-transform: uppercase;
@@ -160,9 +160,7 @@ section .content{
     grid-template-rows: min-content auto min-content;
 }
 
-.reveals{
-    opacity: 0;
-}
+
 
 .content.active{
     opacity: 1;
