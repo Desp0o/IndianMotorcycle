@@ -2,7 +2,7 @@
 document.getElementById("menu").addEventListener('click',(e)=>{
     e.preventDefault();
     document.getElementById("burger").style.right = "0px";
-    document.querySelector('body').style.overflow = "hidden";  
+    
     document.getElementById('blur').style.display = "block";  
 })
 
