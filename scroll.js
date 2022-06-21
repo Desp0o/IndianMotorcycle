@@ -11,6 +11,7 @@ const reveals = document.querySelectorAll('.content');
         }
     })
 
+    
 window.addEventListener('scroll', () => {
     
     for (let i = 0; i < reveals.length; i++) {
@@ -18,7 +19,7 @@ window.addEventListener('scroll', () => {
         const windowHeight = window.innerHeight;
         const revealTop = reveals[i].getBoundingClientRect().top;
         const revealpoint = 350;
-        const revealEndPoint = 680;
+        const revealEndPoint = 1000;
         
             if(revealTop < windowHeight - revealpoint){
                 reveals[i].classList.add('active');
