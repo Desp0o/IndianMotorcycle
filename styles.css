@@ -67,7 +67,7 @@ header{
 
 .content h1{
     font-size: 50px;
-    font-family: fantasy;
+    font-family: fantasy !important;
 }
 
 @media(max-width:500px){
@@ -158,6 +158,22 @@ section{
     background-size: cover;
     background-position: center;
     
+}
+
+#Chief{
+    background-image: url(/images/mainpage.jpg);
+}
+
+#ftrs{
+    background-image: url(/images/FTRS.jpg);
+}
+
+#Scout{
+    background-image: url(/images/Bobber.jpg);
+}
+
+#dark{
+    background-image: url(/images/Bobber1.jpg);
 }
 
 section .content{
