@@ -1,0 +1,98 @@
+
+.radio{
+    display: none;
+}
+
+.slider{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    overflow: hidden;
+}
+
+.slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+
+    transition: all 0.2s ease;
+}
+
+
+.slide img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.dots{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80vh;
+}
+
+.dots label{
+    width: 15px;
+    height: 15px;
+    background-color: #838383;
+    margin: 0 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: all 0.2s ease-in-out;
+}
+
+.dots label:hover{
+    opacity: 1;
+}
+
+#radio_1:checked ~ #slide_1,
+#radio_2:checked ~ #slide_2,
+#radio_3:checked ~ #slide_3,
+#radio_4:checked ~ #slide_4{
+    opacity: 1;
+}
+
+#radio_1:checked ~ .dots #label_1,
+#radio_2:checked ~ .dots #label_2,
+#radio_3:checked ~ .dots #label_3,
+#radio_4:checked ~ .dots #label_4{
+    opacity: 1;
+    background-color: #950731;
+}
+
+.captions_sec{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.caption_1,
+.caption_2,
+.caption_3,
+.caption_4{
+    color: inherit;
+    font-size: 50px !important;
+    margin-top: 60vh;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    display: none;
+    font-family:fantasy;
+}
+
+#radio_1:checked ~ .captions_sec .caption_1,
+#radio_2:checked ~ .captions_sec .caption_2,
+#radio_3:checked ~ .captions_sec .caption_3,
+#radio_4:checked ~ .captions_sec .caption_4{
+    display: block;
+}
+
