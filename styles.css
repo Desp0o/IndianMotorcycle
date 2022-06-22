@@ -66,7 +66,8 @@ header{
 }
 
 .content h1{
-    font-size: 2.5rem;
+    font-size: 50px;
+    font-family: fantasy;
 }
 
 .right_menu{

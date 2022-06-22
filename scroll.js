@@ -1,5 +1,4 @@
 
-
 const reveals = document.querySelectorAll('.content');
 
     window.addEventListener('load', () => {
@@ -11,11 +10,8 @@ const reveals = document.querySelectorAll('.content');
         }
     })
 
-    
-
 
 window.addEventListener('load',function () {
-    window.scrollTo(localStorage.scrollX || 0, localStorage.scrollY || 0);
 
     window.addEventListener('scroll', () => {
     
@@ -47,8 +43,6 @@ window.addEventListener('load',function () {
         
                         for (let i = 0; i < reveals.length; i++) {
                             reveals[i].classList.add('active');
-                            
-                                    
                         }
                     })
                 }

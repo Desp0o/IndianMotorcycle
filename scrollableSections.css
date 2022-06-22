@@ -81,7 +81,7 @@
 .caption_3,
 .caption_4{
     color: inherit;
-    font-size: 50px;
+    font-size: 50px !important;
     margin-top: 60vh;
     text-transform: uppercase;
     letter-spacing: 5px;
