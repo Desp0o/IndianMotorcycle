@@ -41,7 +41,7 @@
 .dots label{
     width: 15px;
     height: 15px;
-    background-color: aqua;
+    background-color: rgb(172, 177, 177);
     margin: 0 10px;
     border-radius: 10px;
     cursor: pointer;
