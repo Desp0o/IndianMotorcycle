@@ -70,6 +70,14 @@ header{
     font-family: fantasy;
 }
 
+@media(max-width:500px){
+    .content h1{
+        font-size: 40px;
+        font-family: fantasy;
+    }
+}
+
+
 .right_menu{
     margin-right: 10px;
     text-align: right;
