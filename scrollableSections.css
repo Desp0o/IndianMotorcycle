@@ -1,0 +1,69 @@
+
+.radio{
+    display: none;
+}
+
+.slider{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    overflow: hidden;
+}
+
+.slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+
+    transition: all 0.2s ease;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.dots{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80vh;
+}
+
+.dots label{
+    width: 15px;
+    height: 15px;
+    background-color: aqua;
+    margin: 0 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 0.3;
+    transition: all 0.2s ease-in-out;
+}
+
+.dots label:hover{
+    opacity: 1;
+}
+
+#radio_1:checked ~ #slide_1,
+#radio_2:checked ~ #slide_2,
+#radio_3:checked ~ #slide_3,
+#radio_4:checked ~ #slide_4{
+    opacity: 1;
+    
+}
+
+#radio_1:checked ~ .dots #label_1,
+#radio_2:checked ~ .dots #label_2,
+#radio_3:checked ~ .dots #label_3,
+#radio_4:checked ~ .dots #label_4{
+    opacity: 1;
+}

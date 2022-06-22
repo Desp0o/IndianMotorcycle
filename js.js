@@ -2,7 +2,6 @@
 document.getElementById("menu").addEventListener('click',(e)=>{
     e.preventDefault();
     document.getElementById("burger").style.right = "0px";
-    
     document.getElementById('blur').style.display = "block";  
 })
 
