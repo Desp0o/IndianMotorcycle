@@ -130,6 +130,12 @@ header{
     }
 }
 
+@media(max-width:400px){
+    .burger{
+        width: 200px;
+    }
+}
+
 .burger_links{
     position: absolute;
     margin-top: 40px;
