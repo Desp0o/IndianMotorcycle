@@ -101,6 +101,12 @@ header{
     color: rgb(0, 0, 0);
 }
 
+@media(max-width:500px){
+    .right_menu a:hover{
+        display: none;
+    }
+}
+
 .desktop{
     display: none;
 }
