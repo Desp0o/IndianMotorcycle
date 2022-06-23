@@ -1,18 +1,13 @@
 //დეკლარირება კონტეტნის
 const reveals = document.querySelectorAll('.content');
 
-
 // რეფრეშზე არსებულ ტაგს მიენიჭოს აქტივი სტატუსი
 window.addEventListener('load', () => {
         
         for (let i = 0; i < reveals.length; i++) {
-            reveals[i].classList.add('active');
-            
-                    
+            reveals[i].classList.add('active');         
         }
 })
-
-
 
 // რეფრეშის და სქროლის კომნინაცია
 window.addEventListener('load',function () {
@@ -36,9 +31,7 @@ window.addEventListener('load',function () {
                     window.addEventListener('load', () => {
         
                         for (let i = 0; i < reveals.length; i++) {
-                            reveals[i].classList.add('active');
-                            
-                                    
+                            reveals[i].classList.add('active');         
                         }
                     })
                 }  
@@ -54,7 +47,6 @@ window.addEventListener('load',function () {
                     })
                 }
     
-                
                 // ნახავს სქროლის პოზიციას
                 localStorage.scrollX = window.scrollX;
                 localStorage.scrollY = window.scrollY;
