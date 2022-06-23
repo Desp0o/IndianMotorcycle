@@ -65,13 +65,13 @@ header{
 
 .content h1{
     font-size: 50px;
-    font-family: fantasy, Impact;
+    font-family: "Helvetica Neue", "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", sans-serif;
 }
 
 @media(max-width:500px){
     .content h1{
         font-size: 40px;
-        font-family: fantasy, Impact;
+        font-family: "Helvetica Neue", "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", sans-serif;
     }
 }
 
