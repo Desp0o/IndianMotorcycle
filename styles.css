@@ -5,11 +5,13 @@
     scroll-behavior: smooth;
 }
 
-
+html[data-useragent*='Mac OS X'] {
+    font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+  }
 
 body{
     color: #950731;
-    font-family: fantasy, sans-serif ;
+    font-family: fantasy ;
     -webkit-font-feature-settings: ;
     position: relative;
     overflow-x: hidden;
