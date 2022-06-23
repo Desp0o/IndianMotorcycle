@@ -86,7 +86,7 @@
     text-transform: uppercase;
     letter-spacing: 5px;
     display: none;
-    font-family:fantasy;
+    font-family: "Helvetica Neue", "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", sans-serif;
 }
 
 #radio_1:checked ~ .captions_sec .caption_1,
