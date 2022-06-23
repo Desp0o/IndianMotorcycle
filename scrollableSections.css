@@ -39,6 +39,18 @@
     margin-top: 80vh;
 }
 
+@media(max-width:568px){
+    #slide_3 img{
+        display: none;
+    }
+
+    #slide_3{
+        background-image: url(/images/slide-3-max500.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}
+
 .dots label{
     width: 15px;
     height: 15px;
@@ -96,7 +108,7 @@
     .caption_4{
         color: inherit;
         font-size: 50px !important;
-        margin-top: 40vh;
+        margin-top: 45vh;
         text-transform: uppercase;
         letter-spacing: 5px;
         display: none;
