@@ -1,16 +1,20 @@
-
+//დეკლარირება კონტეტნის
 const reveals = document.querySelectorAll('.content');
 
-    window.addEventListener('load', () => {
+
+// რეფრეშზე არსებულ ტაგს მიენიჭოს აქტივი სტატუსი
+window.addEventListener('load', () => {
         
         for (let i = 0; i < reveals.length; i++) {
             reveals[i].classList.add('active');
             
                     
         }
-    })
+})
 
 
+
+// რეფრეშის და სქროლის კომნინაცია
 window.addEventListener('load',function () {
 
     window.addEventListener('scroll', () => {
@@ -20,8 +24,10 @@ window.addEventListener('load',function () {
             const windowHeight = window.innerHeight;
             const revealTop = reveals[i].getBoundingClientRect().top;
             const revealpoint = 350;
-            const revealEndPoint = 1000;
+            const hideBottom = reveals[i].getBoundingClientRect().bottom;
+            const hidePoint = 300;
             
+                //სქროლისას გამოჩენა
                 if(revealTop < windowHeight - revealpoint){
                     reveals[i].classList.add('active');
                     
@@ -36,8 +42,9 @@ window.addEventListener('load',function () {
                         }
                     })
                 }  
-    
-                if(revealTop < windowHeight - revealEndPoint){
+                
+                //სქროლისას გაქრობა
+                if(hideBottom < windowHeight - hidePoint){
                     reveals[i].classList.remove('active');
                     window.addEventListener('load', () => {
         
