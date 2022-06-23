@@ -124,6 +124,12 @@ header{
     transition: right 0.4s ease;
 }
 
+@media(max-width:500px){
+    .burger{
+        width: 250px;
+    }
+}
+
 .burger_links{
     position: absolute;
     margin-top: 40px;
