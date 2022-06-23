@@ -9,7 +9,8 @@
 
 body{
     color: #950731;
-    font-family: fantasy, Impact;
+    font-family: fantasy, sans-serif ;
+    -webkit-font-feature-settings: ;
     position: relative;
     overflow-x: hidden;
 }
