@@ -12,7 +12,6 @@ html[data-useragent*='Mac OS X'] {
 body{
     color: #950731;
     font-family: fantasy ;
-    -webkit-font-feature-settings: ;
     position: relative;
     overflow-x: hidden;
 }
