@@ -2,12 +2,11 @@
     margin: 0;
     padding: 0px;
     box-sizing: border-box;
-    
+    scroll-behavior: smooth;
 }
 
 html{
     scroll-snap-type: y mandatory;
-    overflow-y: auto;
 }
 
 body{
@@ -15,7 +14,6 @@ body{
     font-family: "Helvetica Neue", "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", sans-serif;
     position: relative;
     overflow-x: hidden;
-    
 }
 
 header{
@@ -164,12 +162,14 @@ header{
 }
 
 section{
+    scroll-snap-align: start;
+
     height: 100vh;
     width: 100%;
     position: relative;
     background-size: cover;
     background-position: center;
-    scroll-snap-align: start;
+    
 }
 
 #Chief{
