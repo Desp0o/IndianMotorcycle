@@ -174,35 +174,51 @@ section{
 
 #Chief{
     background-image: url(./images/mainpage.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 #ftrs{
     background-image: url(./images/FTRS.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 #Scout{
     background-image: url(./images/Bobber.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 #dark{
     background-image: url(./images/Bobber1.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 @media(max-width:700px){
     #Chief{
         background-image: url(./images/mainpage.jpg);
+        background-size: cover;
+        background-position: center;
     }
     
     #ftrs{
         background-image: url(./images/FTRS-max700.jpg);
+        background-size: cover;
+        background-position: center;
     }
     
     #Scout{
         background-image: url(./images/Bobber-max700.jpg);
+        background-size: cover;
+        background-position: center;
     }
     
     #dark{
         background-image: url(./images/Bobber1-max700.jpg);
+        background-size: cover;
+        background-position: center;
     }
 }
 
