@@ -179,7 +179,9 @@ section{
 }
 
 #ftrs{
-   /********* შეცვლა ***/
+    background-image: url(./images/FTRS.jpgs);
+    background-size: cover;
+    background-position: center;
 }
 
 #ftrs_img{
@@ -212,7 +214,9 @@ section{
     }
     
     #ftrs{
-        /*** შეცვლა **/
+        background-image: url(./images/FTRS-max700.jpg);
+        background-size: cover;
+        background-position: center;
     }
     
     #Scout{
