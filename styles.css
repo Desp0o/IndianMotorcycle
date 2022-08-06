@@ -179,19 +179,9 @@ section{
 }
 
 #ftrs{
-    background-image: url(./images/FTRS.jpgs);
+    background-image: url(./images/FTRS.jpg);
     background-size: cover;
     background-position: center;
-}
-
-#ftrs_img{
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    -o-object-fit: cover;
-    object-position: center;
 }
 
 #Scout{
@@ -214,21 +204,25 @@ section{
     }
     
     #ftrs{
-        background-image: url(./images/FTRS-max700.jpg);
+        width: 100%;
+        background-position: right;
         background-size: cover;
-        background-position: center;
+        background-clip: content-box;
+        
     }
     
     #Scout{
         background-image: url(./images/Bobber-max700.jpg);
         background-size: cover;
         background-position: center;
+        background-position: right;
     }
     
     #dark{
         background-image: url(./images/Bobber1-max700.jpg);
         background-size: cover;
         background-position: center;
+        background-position: right;
     }
 }
 
@@ -279,7 +273,7 @@ section .content{
     background-color: white;
     text-decoration: none;
     text-align: center;
-    font-weight: 900;
+    font-weight: 100 !important;
 
     color: inherit;
     border-radius: 30px;
