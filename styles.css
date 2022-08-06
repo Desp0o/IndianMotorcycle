@@ -179,9 +179,17 @@ section{
 }
 
 #ftrs{
-    background-image: url(./images/FTRS.jpg);
-    background-size: cover;
-    background-position: center;
+   /********* შეცვლა ***/
+}
+
+#ftrs_img{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    -o-object-fit: cover;
+    object-position: center;
 }
 
 #Scout{
@@ -204,9 +212,7 @@ section{
     }
     
     #ftrs{
-        background-image: url(./images/FTRS-max700.jpg);
-        background-size: cover;
-        background-position: center;
+        /*** შეცვლა **/
     }
     
     #Scout{
